@@ -32,13 +32,12 @@ The true thermal output dissipated by the fin matrix is evaluated via:
 
 $$Q_{\text{fin}} = \sqrt{hPkA_c} \,\theta_b \tanh(mL)$$
 
----
-
 ## Key Results
 * **Fin Efficiency ($\eta_f$):** $\approx 83\%$ for both solid and PCM configurations (independent of filling since it relies on outer geometry and $h$).
 * **Fin Effectiveness ($\epsilon_f$):** $\approx 60$ for both models, demonstrating a massive enhancement over an un-finned base plane.
 * **Steady-State Base Temperatures ($T_1$):** Solid fin stabilized at $80.7^{\circ}\text{C}$ vs. the wax-filled fin stabilizing at a higher $88.5^{\circ}\text{C}$ due to the higher internal thermal resistance of the core.
 * **Latent Heat Transition Block:** The wax-filled fin exhibited a prominent thermal plateau in the $50\text{--}55^{\circ}\text{C}$ range, reflecting latent heat absorption during melting and resulting in a $\sim 13\%$ longer total cooling window.
+* **Superior Thermal Regulation:** While the solid fin experienced sharp heating and cooling spikes, the wax core successfully acted as a heat regulation buffer. It suppressed rapid temperature fluctuations by storing and releasing thermal energy during phase transitions.
 
 ## Conclusion
-The study validates that embedding a Phase Change Material (PCM) inside extended surfaces does not enhance steady-state heat dissipation rates, but instead acts as a powerful distributed thermal buffer. The localized latent energy release suppresses rapid temperature fluctuations and enforces thermal regulation, proving highly valuable for transient load setups such as electronics cooling and battery thermal management.
+The study validates that embedding a Phase Change Material (PCM) inside extended surfaces does not enhance steady-state heat dissipation rates, but instead acts as a powerful distributed thermal buffer. The localized latent energy release of the wax suppresses rapid temperature fluctuations and enforces excellent thermal regulation. This specialized characteristic makes PCM-integrated fins highly valuable for transient load setups such as electronics cooling, thermal energy storage, and battery thermal management systems.
