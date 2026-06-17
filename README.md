@@ -8,6 +8,7 @@ An experimental study evaluating the thermal performance, temperature distributi
 * **Measure Temperature Distribution:** Map spatial temperature gradients along the fin lengths from base to tip using multi-node thermocouple tracking.
 * **Calculate Thermal Metrics:** Determine heat transfer rates ($Q_{\text{fin}}$), fin efficiency ($\eta_f$), and fin effectiveness ($\epsilon_f$) to assess system performance.
 * **Analyze Transient Dynamics:** Characterize the heating curves, steady-state benchmarks, and cooling rates influenced by latent heat buffering.
+* **Numerical Validation:** Validate experimental temperature trends against a computational Finite Difference Method (FDM) simulation.
 
 ## Experimental Specifications
 * **Fin Geometry:** Aluminum rods with a length ($L$) of approximately $180\text{ mm}$ and an outer diameter ($d$) of $10\text{ mm}$.
@@ -32,12 +33,14 @@ The true thermal output dissipated by the fin matrix is evaluated via:
 
 $$Q_{\text{fin}} = \sqrt{hPkA_c} \,\theta_b \tanh(mL)$$
 
+Transient data profiles were computationally modeled and validated utilizing a **Finite Difference Method (FDM)** numerical simulation framework.
+
 ## Key Results
 * **Fin Efficiency ($\eta_f$):** $\approx 83\%$ for both solid and PCM configurations (independent of filling since it relies on outer geometry and $h$).
 * **Fin Effectiveness ($\epsilon_f$):** $\approx 60$ for both models, demonstrating a massive enhancement over an un-finned base plane.
 * **Steady-State Base Temperatures ($T_1$):** Solid fin stabilized at $80.7^{\circ}\text{C}$ vs. the wax-filled fin stabilizing at a higher $88.5^{\circ}\text{C}$ due to the higher internal thermal resistance of the core.
-* **Latent Heat Transition Block:** The wax-filled fin exhibited a prominent thermal plateau in the $50\text{--}55^{\circ}\text{C}$ range, reflecting latent heat absorption during melting and resulting in a $\sim 13\%$ longer total cooling window.
-* **Superior Thermal Regulation:** While the solid fin experienced sharp heating and cooling spikes, the wax core successfully acted as a heat regulation buffer. It suppressed rapid temperature fluctuations by storing and releasing thermal energy during phase transitions.
+* **Latent Heat Transition Block:** The wax-filled fin exhibited a prominent thermal plateau in the $50\text{--}55^{\circ}\text{C}$ range, successfully reflecting latent heat absorption during melting.
+* **Superior Thermal Regulation:** The PCM fin successfully demonstrated behavior as a high-efficiency thermal buffer. It slowed down the cooling rate by **2.4×** near the $55^{\circ}\text{C}$ phase-change temperature and extended the overall cooling time window by **13%**.
 
 ## Conclusion
 The study validates that embedding a Phase Change Material (PCM) inside extended surfaces does not enhance steady-state heat dissipation rates, but instead acts as a powerful distributed thermal buffer. The localized latent energy release of the wax suppresses rapid temperature fluctuations and enforces excellent thermal regulation. This specialized characteristic makes PCM-integrated fins highly valuable for transient load setups such as electronics cooling, thermal energy storage, and battery thermal management systems.
